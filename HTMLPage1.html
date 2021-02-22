@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<canvas id="myCanvas" width="800" height="400"></canvas>
+<head>
+    <meta charset="utf-8" />
+    <title>丸い</title>
+ 
+</head>
+
+<body>
+   <script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "#2E9AFE";
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+ctx.fillStyle = "white";
+ctx.font = "30px Verdana";
+for (let i = 1; i < 50; i++) {
+  ctx.fillText("Hello World", i*5, i*19);
+}
+
+</script>
+</body>
