@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8" />
+    <title>果物</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1200" height="800"></canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+var fruit = [
+	{name:"Apple", quantity:20, color:"red"},
+	{name:"Orange", quantity:10, color:"orange"},
+	//edited yellow for better visibility against white text
+	{name:"Banana", quantity:15, color:"#f7d307"},
+	{name:"Kiwi", quantity:3, color:"green"},
+	{name:"Blueberry", quantity:5, color:"blue"},
+	{name:"Grapes", quantity:8, color:"purple"}];
+
+	ctx.font = "14px Verdana Bold";
+
+	for(var i = 0; i <= fruit.length; i++){
+		ctx.fillStyle = fruit[i].color;
+		ctx.fillRect(100*i, 500, 100, fruit[i].quantity*-10);
+		ctx.fillStyle = "white";
+		ctx.fillText(fruit[i].name + ": " + fruit[i].quantity, 100*i+5, 490);
+	}
+</script>
+</body>
+</html>
