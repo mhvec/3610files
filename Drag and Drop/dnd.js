@@ -1,7 +1,7 @@
 var config = {
     type: Phaser.AUTO,
-    width: 1280,
-    height: 850,
+    width: 1500,
+    height: 1000,
     _parent: 'phaser-example',
     backgroundColor: '#efefef',
     scene: {
