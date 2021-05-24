@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="form.js"></script>
+    <title></title>
+</head>
+<body>
+<form action="/action_page.php" method="get">
+            <label for="title">Title:</label><br/>
+            <input type="text" id="title" name="title" size="45" maxlength="40" onInput="inputTitle(this.value)"><br/>
+            <label for="notes">Notes:</label><br/>
+            <textarea id="field" name="noteSpace" rows="10" column="80" style="width: 640px; height: 320px;" onInput="inputNote(this.value)"></textarea>
+        </form>
+
+</body>
+</html>
