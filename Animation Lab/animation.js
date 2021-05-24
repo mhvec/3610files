@@ -44,14 +44,14 @@ Scene.mainLoop = function() {
     Scene.update();
     Scene.draw();
 
-	if(Scene.sprite.frame >= 8){
-	if(Scene.sprite.frame <= 9){
+	if(Scene.sprite.frame >= 36){
+	if(Scene.sprite.frame <= 41){
         Scene.textBubble();
     }
     }
 	
 	// Animate at 24 frames a second.
-    window.setTimeout(Scene.mainLoop, 1000/2);
+    window.setTimeout(Scene.mainLoop, 1000/9);
 };
 
 Scene.update = function () {
