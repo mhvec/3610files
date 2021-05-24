@@ -18,7 +18,7 @@ function preload (){
 }
 
 function create ()
-{   this.add.image(750,500,'cakes');
+{   this.add.image(1500,1000,'cakes');
     var strawberry = this.add.sprite(200, 100, 'strawberry');
     var strawberry2 = this.add.sprite(300, 100, 'strawberry');
     var strawberry3 = this.add.sprite(400, 100, 'strawberry');
