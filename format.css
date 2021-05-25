@@ -4,6 +4,7 @@
 }
 body{
     background-color:#FFF;
+    background-image: url('3610background.png');
 }
 
 nav p{
@@ -77,8 +78,9 @@ ul li a:hover{
 }
 
 h2{
-    margin-bottom: 12px;
+    margin-bottom: 0px;
     text-align: center;
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: Impact, fantasy;
     color: #000;
+  font-size: 80px;
 }
